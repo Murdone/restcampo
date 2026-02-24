@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restcampo/src/paginas/homeScreen/home_screen.dart';
+import 'package:restcampo/src/paginas/ubicacion/como_llegar.dart';
 import 'package:restcampo/src/utils/Menu/menu_header.dart';
 import 'package:restcampo/src/utils/Menu/menu_title.dart';
 
@@ -45,20 +46,18 @@ class MenuScreen extends StatelessWidget {
                     onTap: () {},
                   ),
                   MenuTile(
-                    icon: Icons.shopping_bag_outlined,
-                    title: 'Pedidos',
-                    onTap: () {},
+                    icon: Icons.maps_home_work_sharp,
+                    title: 'Como llegar',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const ComoLlegarScreen(),
+                        ),
+                      );
+                    },
                   ),
-                  MenuTile(
-                    icon: Icons.person_outline,
-                    title: 'Perfil',
-                    onTap: () {},
-                  ),
-                  MenuTile(
-                    icon: Icons.settings_outlined,
-                    title: 'Ajustes',
-                    onTap: () {},
-                  ),
+
                   const SizedBox(height: 8),
                   Divider(color: cs.outlineVariant.withOpacity(0.6), height: 1),
                   MenuTile(
