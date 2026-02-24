@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restcampo/src/utils/theme/theme_controller.dart';
+
 import 'src/paginas/splash/splash_screen.dart';
 
 final themeController = ThemeController();
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ThemeMode>(
       valueListenable: themeController.themeMode,
-      builder: (_, mode, __) {
+      builder: (_, mode, _) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Campo Restoran',

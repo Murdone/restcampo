@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(logoPath, width: 140, height: 140),
+              Image.asset(logoPath, width: 200, height: 200),
               const SizedBox(height: 16),
               Text(
                 'Campo Restoran',
